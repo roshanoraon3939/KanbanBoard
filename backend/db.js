@@ -5,9 +5,7 @@ const mongoose = require("mongoose");
 function connectToDB() {
   return new Promise((resolve, reject) => {
     mongoose
-      .connect('mongodb://localhost:27017/test', {
-        useUnifiedTopology: true,
-      })
+      .connect('mongodb://localhost:27017/test')
       .then(() => {
         console.log("Connected to MongoDB");
         resolve();
