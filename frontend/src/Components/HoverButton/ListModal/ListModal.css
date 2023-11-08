@@ -1,0 +1,18 @@
+.editable_edit_footer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 20%;
+  }
+  
+  .editable_edit_footer button {
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    background-color: #14b8a6;
+    color: #fff;
+    border: none;
+    transition: 100ms ease;
+    padding: 0.25rem 1rem;
+  }
+  
