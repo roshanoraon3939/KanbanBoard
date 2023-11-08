@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 function connectToDB() {
   return new Promise((resolve, reject) => {
     mongoose
-      .connect('mongodb://localhost:27017/test')
+      .connect('mongodb+srv://roshanoraon3939:roshanoraon3939@cluster0.i9clblc.mongodb.net/')
       .then(() => {
         console.log("Connected to MongoDB");
         resolve();
