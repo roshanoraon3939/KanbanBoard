@@ -6,7 +6,6 @@ function connectToDB() {
   return new Promise((resolve, reject) => {
     mongoose
       .connect(process.env.MONGODB_URI, {
-        useNewUrlParser: true,
         useUnifiedTopology: true,
       })
       .then(() => {
