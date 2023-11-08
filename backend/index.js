@@ -77,3 +77,5 @@ app.delete("/teams/:id", async (req, res) => {
 connectToDB().then(() => {
   app.listen(3000, () => console.log("Server is running"));
 });
+
+module.exports = app;
