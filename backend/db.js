@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 function connectToDB() {
   return new Promise((resolve, reject) => {
     mongoose
-      .connect(process.env.MONGODB_URI, {
+      .connect('mongodb://localhost:27017/test', {
         useUnifiedTopology: true,
       })
       .then(() => {
